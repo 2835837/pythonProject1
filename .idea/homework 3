@@ -1,1 +1,17 @@
+def errorcode(num):
+    match num:
+        case 500:
+            return "Internal Server Error"
+        case 401:
+            return "Unauthorised"
+        case 400:
+            return "Bad Request"
+        case 403:
+            return "Forbidden"
+        case 404:
+            return "Not Found"
 
+# Test it
+print(errorcode(401))
+
+quit()
