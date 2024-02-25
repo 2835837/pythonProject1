@@ -1,19 +1,10 @@
-def cubicequation(a, b, c, d):
-    brucket1 = ((-b ** 3) / (27*(a) ** 3)) + ((b * c) / 6 * (a ** 2)) - (d / (2 * a))
-    brucket2 = (c / 3 * a) - (b ** 2 / 9 * a ** 2)
-    brucket3 = b / 3 * a
-    x = ((brucket1 + brucket1 ** 2 + brucket2 ** 3) ** 1 / 3) + ((brucket1 - brucket1 ** 2 + brucket2 ** 3) ** 1 / 3) -  brucket3
-    return x
-# Ask the user their name and cubic
-name= input ("what is your name")
-a= input("what is your a")
-b= input("what is your b")
-c= input("what is your c")
-d= input("what is your d")
+def bio(name,born,pronoun):
+    age = 2024-born
+    future = born+67
+    print(name.capitalize(), " was born in " , born)
+    print(pronoun, " will turn " , age, "years old this year")
+    print(pronoun, "will be 67 in the year",future)
 
-#Give the answer
-print("Hello",name,"I will solve x**3-6*x**2+11*x-6=0")
-print("The root of the cubic is", cubicequation(a, b, c, d))
-
-#END
-quit()
+bio("stephen",1984,"he")
+bio("mary",1990,"she")
+bio("jane",2000,"she")
