@@ -1,0 +1,19 @@
+# Ask for a, b, c
+a = int(input("What is a?"))
+b = int(input("What is b?"))
+c = int(input("What is c?"))
+D = b**2 - 4*a*c
+
+if a == 0:
+    print("That is no value")
+elif D > 0:
+    print("There are two solution, they are", (-b - D ** 1/2))/ (2*a), "and", (-b + D**1/2)/(2*a)
+elif D == 0:
+    print("There is one solution, It is",(-b)/(2*a))
+elif D < 0:
+    print("No solution, there are no real roots")
+else:
+    print("Unknow error")
+
+#Exit
+quit()
