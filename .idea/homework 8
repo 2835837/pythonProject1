@@ -1,0 +1,17 @@
+x = int(input("Give me a four digit number that is even and does not end with a 0"))
+if x >=1000:
+    if x <= 9999:
+        if x%2 == 0:
+          if not x%10 == 0:
+              print("Great!")
+          else:
+              print("No, this is not right! It is ends with 0")
+        else:
+            print("No, this is not right! It is not even")
+    else:
+        print("No, this is not right! It is too big")
+else:
+    print("No, this is not right! It is too small")
+
+#End
+quit()
