@@ -1,0 +1,70 @@
+# # # Term 1 # # #
+#  This is a code for ask the scores
+AES1 = int(input("AES1:"))
+Maths1 = int(input("Maths1:"))
+Physics1 = int(input("Physics 1:"))
+ComputerProgramming1 = int(input("ComputerProgramming1:"))
+# check the number
+if AES1 < 0 or Maths1 < 0 or Physics1 < 0 or ComputerProgramming1 < 0 or AES1 > 100 or Maths1 > 100 or Physics1 > 100 or ComputerProgramming1 > 100 :
+    print("That is not a valid input. Goodbye.")
+    quit()
+else:
+    print("Thank you, Term 1 is inputted")
+
+
+
+
+# # # Term 2 # # #
+#  This is a code for ask the scores
+AES2 = int(input("AES2:"))
+Maths2 = int(input("Maths2:"))
+Physics2 = int(input("Physics2："))
+ComputerProgramming2 = int(input("ComputerProgramming2："))
+# check the number
+if AES2 < 0 or Maths2 < 0 or Physics2 < 0 or ComputerProgramming2 < 0 or AES2 > 100 or Maths2 > 100 or Physics2 > 100 or ComputerProgramming2 > 100 :
+    print("That is not a valid input. Goodbye.")
+    quit()
+else:
+    print("Thank you, Term 2 is inputted")
+
+
+
+# # # Term 3 # # #
+#  This is a code for ask the scores
+AES3 = int(input("AES3："))
+Maths3 = int(input("Maths3："))
+Physics3 = int(input("Physics3:"))
+CreativeDesign = int(input("CreativeDesign:"))
+# check the number
+if AES3 < 0 or Maths3 < 0 or Physics3 < 0 or CreativeDesign < 0 or AES3 > 100 or Maths3 > 100 or Physics3 > 100 or CreativeDesign > 100 :
+    print("That is not a valid input. Goodbye.")
+    quit()
+else:
+    print("Thank you, Term 3 is inputted")
+
+
+
+
+Totalaverage = (AES1 + Maths1 + Physics1 + ComputerProgramming1 + AES2 + Maths2 + Physics2 + ComputerProgramming2 + AES3 + Maths3 + Physics3 + CreativeDesign) / 12
+Mathsaverage = (Maths2+Maths3)/2
+# check all
+if AES1 or Maths1 or Physics1 or ComputerProgramming1 or AES2 or Maths2 or Physics2 or ComputerProgramming2 or AES3 or Maths3 or Physics3 or CreativeDesign < 40:
+    if Totalaverage > 60:
+        if Mathsaverage > 65:
+            if AES3 >60:
+               print("WELL DONE :) YOU PROGRESS!!")
+            else:
+               print("Sorry, you do not progress because you must have at least 60% in AES TERM 3")
+        else:
+            print("Sorry, you do not progress because you must have at least an average of 65% in Maths 2 and Maths 3")
+    else:
+        print("Sorry, you do not progress because you must have at least an average of 60% overall")
+else:
+    print("Sorry, you do not progress because you must get at least 40% in all subjects ")
+
+# a special message
+if Totalaverage == 100:
+    print("Wow you are so smart! 100 in everything! :) ")
+
+# END
+quit()
